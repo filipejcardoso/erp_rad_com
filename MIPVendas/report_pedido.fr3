@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43156.6676466435" ReportOptions.Description.Text="" ReportOptions.LastChange="43158.7743434954" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxUserDataSet1" DataSetName="frxUserDataSet1"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="18.89765" Width="718.1107" Child="Child8">
+      <TfrxMemoView Name="Memo26" Left="0" Top="0" Width="721.89023" Height="22.67718" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial Black" Font.Style="0" Fill.BackColor="10526880" HAlign="haCenter" ParentFont="False" Text="PROPOSTA COMERCIAL"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="536.69326" Width="718.1107" ColumnWidth="0" ColumnGap="0" DataSet="frxUserDataSet1" DataSetName="frxUserDataSet1" RowCount="0">
+      <TfrxMemoView Name="fundo" ShiftMode="smDontShift" Left="2.55906" Top="1" Width="714.33117" Height="18.89765" StretchMode="smActualHeight" Highlight.Font.Charset="1" Highlight.Font.Color="0" Highlight.Font.Height="-13" Highlight.Font.Name="Arial" Highlight.Font.Style="0" Highlight.Condition="(&#60;Line#&#62; mod 2) = 0" Highlight.FillType="ftBrush" Highlight.Fill.BackColor="15263976" Text=""/>
+      <TfrxMemoView Name="data_item" Left="3.33859" Top="3.77953" Width="30.23624" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[item]"/>
+      <TfrxMemoView Name="data_codbarras" Left="41.69295" Top="3.77953" Width="113.3859" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[codbarras]"/>
+      <TfrxMemoView Name="data_descricao" Left="162.85838" Top="3.77953" Width="181.41744" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[nome]"/>
+      <TfrxMemoView Name="data_qtd" Left="353.83488" Top="3.77953" Width="30.23624" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[quantidade]"/>
+      <TfrxMemoView Name="data_un" Left="395.40971" Top="3.77953" Width="30.23624" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[unidade]"/>
+      <TfrxMemoView Name="data_marca" Left="433.88219" Top="3.77953" Width="52.91342" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[marca]"/>
+      <TfrxMemoView Name="data_desconto" Left="493.1342" Top="3.77953" Width="64.25201" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[desconto]"/>
+      <TfrxMemoView Name="data_unitario" Left="564.16574" Top="3.77953" Width="79.37013" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[unitario]"/>
+      <TfrxMemoView Name="data_total" Left="651.19728" Top="3.77953" Width="64.25201" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[total]"/>
+    </TfrxMasterData>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41.57483" Left="0" Top="582.04762" Width="718.1107" Child="Child7">
+      <TfrxMemoView Name="Memo8" Left="0" Top="7.55906" Width="718.1107" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial Black" Font.Style="0" Fill.BackColor="14145495" HAlign="haRight" ParentFont="False" Text="[valor_total]"/>
+      <TfrxMemoView Name="Memo29" Left="0" Top="7.55906" Width="94.48825" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial Black" Font.Style="0" ParentFont="False" Text="TOTAL"/>
+    </TfrxFooter>
+    <TfrxChild Name="Child1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="491.3389" Width="718.1107">
+      <TfrxMemoView Name="title_un" Left="395.40971" Top="0" Width="30.23624" Height="15.11812" Font.Charset="1" Font.Color="128" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="UN"/>
+      <TfrxMemoView Name="title_item" Left="4.33859" Top="0" Width="30.23624" Height="15.11812" Font.Charset="1" Font.Color="128" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="ITEM"/>
+      <TfrxMemoView Name="title_codbarras" Left="42.69295" Top="0" Width="113.3859" Height="15.11812" Font.Charset="1" Font.Color="128" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="CÓDIGO DE  BARRAS"/>
+      <TfrxMemoView Name="title_descricao" Left="163.85838" Top="0" Width="181.41744" Height="15.11812" Font.Charset="1" Font.Color="128" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="DESCRIÇÃO"/>
+      <TfrxMemoView Name="title_qtd" Left="353.83488" Top="0" Width="30.23624" Height="15.11812" Font.Charset="1" Font.Color="128" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="QTD"/>
+      <TfrxMemoView Name="title_marca" Left="433.88219" Top="0" Width="52.91342" Height="15.11812" Font.Charset="1" Font.Color="128" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="MARCA"/>
+      <TfrxMemoView Name="title_desconto" Left="492.1342" Top="0" Width="64.25201" Height="15.11812" Font.Charset="1" Font.Color="128" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="DESCONTO"/>
+      <TfrxMemoView Name="tile_unitario" Left="563.16574" Top="0" Width="79.37013" Height="15.11812" Font.Charset="1" Font.Color="128" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="UNITÁRIO (R$)"/>
+      <TfrxMemoView Name="title_total" Left="649.19728" Top="0" Width="68.03154" Height="15.11812" Font.Charset="1" Font.Color="128" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="TOTAL (R$)"/>
+    </TfrxChild>
+    <TfrxChild Name="Child2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="419.52783" Width="718.1107" Child="Child6">
+      <TfrxMemoView Name="Memo1" Left="11.33859" Top="3.77952756" Width="105.82684" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="DATA DE EMISSÃO: "/>
+      <TfrxMemoView Name="Memo2" Left="110.94496" Top="3.77952756" Width="105.82684" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[data]"/>
+      <TfrxMemoView Name="Memo3" Left="272.12616" Top="3.77952756" Width="79.37013" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="PROPOSTA Nº:"/>
+      <TfrxMemoView Name="Memo4" Left="349.05535" Top="3.77952756" Width="105.82684" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[numero]"/>
+      <TfrxMemoView Name="Memo5" Left="551.81138" Top="3.77953" Width="60.47248" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="VALIDADE:"/>
+      <TfrxMemoView Name="Memo6" Left="610.84292" Top="3.77953" Width="105.82684" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[validade]"/>
+    </TfrxChild>
+    <TfrxChild Name="Child3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="83.14966" Left="0" Top="268.34663" Width="718.1107" Child="Child4">
+      <TfrxMemoView Name="Memo10" Left="11.77953" Top="34.01577" Width="211.65368" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[logradouro]"/>
+      <TfrxMemoView Name="Memo11" Left="12.77953" Top="60.47248" Width="30.23624" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="CEP:"/>
+      <TfrxMemoView Name="Memo12" Left="44.35436" Top="60.47248" Width="181.41744" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[cep]"/>
+      <TfrxMemoView Name="Memo20" Left="498.89796" Top="60.47248" Width="56.69295" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="CELULAR: "/>
+      <TfrxMemoView Name="Memo51" Left="554.59091" Top="60.47248" Width="154.96073" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[celular]"/>
+      <TfrxMemoView Name="Memo13" Left="498.89796" Top="7.55906" Width="45.35436" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="E-MAIL: "/>
+      <TfrxMemoView Name="Memo14" Left="544.59091" Top="7.55906" Width="166.29932" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[email]"/>
+      <TfrxMemoView Name="Memo18" Left="498.89796" Top="34.01577" Width="60.47248" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="TELEFONE:"/>
+      <TfrxMemoView Name="Memo19" Left="559.9295" Top="34.01577" Width="151.1812" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[telefone]"/>
+      <TfrxMemoView Name="Memo15" Left="257.00804" Top="34.01577" Width="18.89765" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="IE:"/>
+      <TfrxMemoView Name="Memo16" Left="275.58287" Top="34.01577" Width="192.75603" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[ie]"/>
+      <TfrxMemoView Name="Memo17" Left="340.1577" Top="60.47248" Width="128.50402" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[regiao]"/>
+      <TfrxMemoView Name="Memo52" Left="257.00804" Top="60.47248" Width="83.14966" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="MUNICÍPIO/UF:"/>
+      <TfrxMemoView Name="Memo9" Left="257.00804" Top="7.55906" Width="211.65368" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[cpf_cnpj]"/>
+      <TfrxMemoView Name="Memo7" Left="11.33859" Top="7.55906" Width="211.65368" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[cliente]"/>
+    </TfrxChild>
+    <TfrxChild Name="Child4" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="374.17347" Width="718.1107" Child="Child2">
+      <TfrxMemoView Name="Memo21" Left="0" Top="0" Width="721.89023" Height="22.67718" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial Black" Font.Style="0" Fill.BackColor="10526880" HAlign="haCenter" ParentFont="False" Text="PEDIDO"/>
+    </TfrxChild>
+    <TfrxChild Name="Child5" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="222.99227" Width="718.1107" Child="Child3">
+      <TfrxMemoView Name="Memo22" Left="0" Top="0" Width="721.89023" Height="22.67718" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial Black" Font.Style="0" Fill.BackColor="10526880" HAlign="haCenter" ParentFont="False" Text="DADOS DO CLIENTE"/>
+    </TfrxChild>
+    <TfrxChild Name="Child6" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="3.77953" Left="0" Top="464.88219" Width="718.1107" Child="Child1">
+      <TfrxMemoView Name="Memo23" Left="0" Top="0" Width="721.89023" Height="3.77953" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial Black" Font.Style="0" Fill.BackColor="10526880" HAlign="haCenter" ParentFont="False" Text=""/>
+    </TfrxChild>
+    <TfrxChild Name="Child7" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="646.29963" Width="718.1107">
+      <TfrxMemoView Name="Memo24" Left="7.55906" Top="3.77953" Width="86.92919" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="OBSERVAÇÕES:"/>
+      <TfrxMemoView Name="Memo25" Left="90.04731" Top="3.77953" Width="616.06339" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[observacao]"/>
+    </TfrxChild>
+    <TfrxChild Name="Child8" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="136.06308" Left="0" Top="64.25201" Width="718.1107" Child="Child5">
+      <TfrxMemoView Name="Memo28" Left="9.89765" Top="7.55906" Width="211.65368" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[empresa]"/>
+      <TfrxMemoView Name="Memo30" Left="10.91342" Top="34.01577" Width="211.65368" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[empresa_cnpj]"/>
+      <TfrxMemoView Name="Memo27" Left="10.33859" Top="60.47248" Width="211.65368" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[empresa_logradouro]"/>
+      <TfrxMemoView Name="Memo31" Left="11.33859" Top="86.92919" Width="30.23624" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="CEP:"/>
+      <TfrxMemoView Name="Memo32" Left="42.91342" Top="86.92919" Width="181.41744" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[empresa_cep]"/>
+      <TfrxMemoView Name="Memo33" Left="11.33859" Top="114.16543" Width="45.35436" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="E-MAIL: "/>
+      <TfrxMemoView Name="Memo34" Left="57.03154" Top="114.16543" Width="166.29932" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[empresa_cep]"/>
+      <TfrxMemoView Name="Memo35" Left="265.3624" Top="34.01577" Width="18.89765" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="IE:"/>
+      <TfrxMemoView Name="Memo36" Left="283.93723" Top="34.01577" Width="192.75603" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[empresa_ie]"/>
+      <TfrxMemoView Name="Memo37" Left="348.51206" Top="60.47248" Width="128.50402" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[empresa_regiao]"/>
+      <TfrxMemoView Name="Memo38" Left="265.3624" Top="86.92919" Width="60.47248" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="TELEFONE:"/>
+      <TfrxMemoView Name="Memo39" Left="326.39394" Top="86.92919" Width="151.1812" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[empresa_telefone]"/>
+      <TfrxMemoView Name="Memo40" Left="265.3624" Top="114.16543" Width="30.23624" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="SITE:"/>
+      <TfrxMemoView Name="Memo41" Left="296.05535" Top="114.16543" Width="181.41744" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="[empresa_site]"/>
+      <TfrxMemoView Name="Memo42" Left="265.3624" Top="60.47248" Width="83.14966" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="SF Pro Display" Font.Style="1" ParentFont="False" Text="MUNICÍPIO/UF:"/>
+      <TfrxPictureView Name="PictureLogo" Left="540.47279" Top="7.55906" Width="117.16543" Height="117.16543" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+    </TfrxChild>
+  </TfrxReportPage>
+</TfrxReport>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/08/10 22:23:05.000.892,C:\Filipe\C++\ASCGestao\Atualizacao\sdiapp.cbproj=C:\Filipe\C++\ASCGestao\Atualizacao\ascatualizacao.cbproj</Transaction>
+    <Transaction>2014/08/10 22:23:52.000.007,C:\Filipe\C++\ASCGestao\Atualizacao\ABOUT.CPP=</Transaction>
+    <Transaction>2014/08/10 22:24:20.000.351,C:\Filipe\C++\ASCGestao\Atualizacao\SDIMAIN.dfm=C:\Filipe\C++\ASCGestao\Atualizacao\Atualizacao.dfm</Transaction>
+    <Transaction>2014/08/10 22:24:20.000.351,C:\Filipe\C++\ASCGestao\Atualizacao\SDIMAIN.h=C:\Filipe\C++\ASCGestao\Atualizacao\Atualizacao.h</Transaction>
+    <Transaction>2014/08/10 22:24:20.000.351,C:\Filipe\C++\ASCGestao\Atualizacao\SDIMAIN.CPP=C:\Filipe\C++\ASCGestao\Atualizacao\Atualizacao.CPP</Transaction>
+    <Transaction>2014/08/10 23:51:21.000.893,=C:\Filipe\C++\ASCGestao\Atualizacao\File1.h</Transaction>
+    <Transaction>2014/08/10 23:51:28.000.354,C:\Filipe\C++\ASCGestao\Atualizacao\File1.h=C:\Filipe\C++\ASCGestao\Atualizacao\CALLBACK.h</Transaction>
+    <Transaction>2014/08/10 23:51:38.000.514,=C:\Filipe\C++\ASCGestao\Atualizacao\File1.cpp</Transaction>
+    <Transaction>2014/08/10 23:51:42.000.755,C:\Filipe\C++\ASCGestao\Atualizacao\File1.cpp=C:\Filipe\C++\ASCGestao\Atualizacao\CALLBACK.cpp</Transaction>
+    <Transaction>2014/08/11 15:21:49.000.130,C:\Filipe\C++\ASCGestao\Atualizacao\ascatualizacao.cbproj=C:\Filipe\C++\ASCGestao\Atualizacao\mipatualizacao.cbproj</Transaction>
+    <Transaction>2016/01/07 11:42:06.000.747,C:\Filipe\C++\MIPVendas\Atualizacao\CALLBACK.cpp=</Transaction>
+    <Transaction>2016/01/07 11:42:07.000.119,C:\Filipe\C++\MIPVendas\Atualizacao\CALLBACK.h=</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="-1" SortType="2"/>
+</BorlandProject>

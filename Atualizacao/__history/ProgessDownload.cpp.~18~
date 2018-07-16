@@ -1,0 +1,47 @@
+#include "ProgressDownload.h"
+
+	MyCallback::MyCallback() {}
+
+    MyCallback::~MyCallback() { }
+
+    // This one is called by URLDownloadToFile
+	MyCallback::STDMETHOD(OnProgress)(/* [in] */ ULONG ulProgress, /* [in] */ ULONG ulProgressMax, /* [in] */ ULONG ulStatusCode, /* [in] */ LPCWSTR wszStatusText)
+	{
+	//	BarraProgresso->Caption = ulProgress+" de bytes(s) "+ulProgressMax;
+	//	StatusProgresso->Max = ulProgressMax;
+	//	cout << "Downloaded " << ulProgress << " of " << ulProgressMax << " byte(s), " << " Status Code = " << ulStatusCode << endl;
+        return S_OK;
+    }
+
+    // The rest  don't do anything...
+/*	MyCallback::STDMETHOD(OnStartBinding)(/* [in] */ DWORD dwReserved, /* [in] */ IBinding __RPC_FAR *pib)
+    { return E_NOTIMPL; }
+
+	MyCallback::STDMETHOD(GetPriority)(/* [out] */ LONG __RPC_FAR *pnPriority)
+    { return E_NOTIMPL; }
+
+	MyCallback::STDMETHOD(OnLowResource)(/* [in] */ DWORD reserved)
+    { return E_NOTIMPL; }
+
+	MyCallback::STDMETHOD(OnStopBinding)(/* [in] */ HRESULT hresult, /* [unique][in] */ LPCWSTR szError)
+    { return E_NOTIMPL; }
+
+	MyCallback::STDMETHOD(GetBindInfo)(/* [out] */ DWORD __RPC_FAR *grfBINDF, /* [unique][out][in] */ BINDINFO __RPC_FAR *pbindinfo)
+    { return E_NOTIMPL; }
+
+	MyCallback::STDMETHOD(OnDataAvailable)(/* [in] */ DWORD grfBSCF, /* [in] */ DWORD dwSize, /* [in] */ FORMATETC __RPC_FAR *pformatetc, /* [in] */ STGMEDIUM __RPC_FAR *pstgmed)
+    { return E_NOTIMPL; }
+
+	MyCallback::STDMETHOD(OnObjectAvailable)(/* [in] */ REFIID riid, /* [iid_is][in] */ IUnknown __RPC_FAR *punk)
+    { return E_NOTIMPL; }
+
+	// IUnknown stuff
+	MyCallback::STDMETHOD_(ULONG,AddRef)()
+    { return 0; }
+
+    MyCallback::STDMETHOD_(ULONG,Release)()
+    { return 0; }
+
+    MyCallback::STDMETHOD(QueryInterface)(/* [in] */ REFIID riid, /* [iid_is][out] */ void __RPC_FAR *__RPC_FAR *ppvObject)
+    { return E_NOTIMPL; }
+*/

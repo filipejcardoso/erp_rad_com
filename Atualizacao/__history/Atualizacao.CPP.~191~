@@ -1,0 +1,111 @@
+//---------------------------------------------------------------------
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Atualizacao.h"
+#include "CALLBACK.h"
+//---------------------------------------------------------------------
+#pragma resource "*.dfm"
+TFAtualizacao *FAtualizacao;
+//---------------------------------------------------------------------
+__fastcall TFAtualizacao::TFAtualizacao(TComponent *AOwner)
+	: TForm(AOwner)
+{
+}
+//---------------------------------------------------------------------
+
+void __fastcall TFAtualizacao::ButtonCancelarClick(TObject *Sender)
+{
+	if(MessageBox(NULL,L"Tem certeza que deseja cancelar a atualização?",L"Cancelar Atualização",MB_YESNO | MB_ICONWARNING)==6)
+		Close();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFAtualizacao::Timer1Timer(TObject *Sender)
+{
+Timer1->Enabled = FALSE;
+//DEFINIÇÃO DE VARIÁVEIS
+//MyCallback *pCallback;
+TIniFile *config=NULL;
+UnicodeString URL,FILENAME,HOST,BD,open,VERSAO,DATABASE,USER,SENHA;
+
+//INSTANCIA CONFIG TINIFILE
+config=new TIniFile(GetCurrentDir()+"\\config.ini");
+//pCallback = new MyCallback();
+
+//BUSCA DADOS .INI
+HOST = config->ReadString("BD1","HostName","");
+DATABASE=config->ReadString("BD1","Database","");
+USER=config->ReadString("BD1","User_Name","");
+SENHA=config->ReadString("BD1","Password","");
+
+//SETA PARÂMETROS SQLCONNECT
+SQLCONNECT->Params->Values["HostName"]=HOST;
+SQLCONNECT->Params->Values["Database"]=DATABASE;
+SQLCONNECT->Params->Values["User_Name"]=USER;
+SQLCONNECT->Params->Values["Password"]=SENHA;
+
+//CONECTA NO BANCO DE DADOS
+SQLCONNECT->Connected=TRUE;
+SQLQuery1->SQLConnection = SQLCONNECT;
+
+		//ANALISA CONTA CONTABIL
+		SQLQuery1->SQL->Clear();
+		SQLQuery1->SQL->Add("SELECT id,versao FROM info_gerais ORDER BY id ASC LIMIT 0,1");
+		SQLQuery1->Open();
+		SQLQuery1->First();
+		if(SQLQuery1->Fields->FieldByName("id")->AsInteger)
+			VERSAO = SQLQuery1->Fields->FieldByName("versao")->AsString;
+
+
+
+	URL = "http://"+config->ReadString("GERAL","SV_Atualizar","")+"/mipgestao/mipgestao_"+VERSAO+".exe";
+	FILENAME = GetCurrentDir()+"\\mipgestao_temp.exe";
+	open = GetCurrentDir()+"\\mipgestao.exe";
+
+	//pCallback->BarraProgresso = ProgressBar1;
+	//pCallback->StatusProgresso = statusdownload;
+
+	Application->ProcessMessages();
+	int i = URLDownloadToFile(NULL,URL.c_str(),FILENAME.c_str(),0,NULL);
+	if(!URLDownloadToFile(NULL,URL.c_str(),FILENAME.c_str(),0,NULL))
+	{
+		DeleteFile(GetCurrentDir()+"\\mipgestao.exe");
+		RenameFile(GetCurrentDir()+"\\mipgestao_temp.exe",GetCurrentDir()+"\\mipgestao.exe");
+		DeleteFile(GetCurrentDir()+"\\mipgestao_temp.exe");
+		Timer2->Enabled = FALSE;
+		ProgressBar1->Position = 100;
+		if(MessageBox(NULL,L"Sistema atualizado com sucesso!",L"Atualização Concluida",MB_OK | MB_ICONINFORMATION))
+		{
+			ShellExecute(Handle,L"open",open.c_str(),GetCurrentDir().c_str(),NULL,SW_SHOW);
+			Close();
+		}
+	}
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TFAtualizacao::FormActivate(TObject *Sender)
+{
+	ProgressBar1->Max = 100;
+	ProgressBar1->Min = 0;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFAtualizacao::Timer2Timer(TObject *Sender)
+{
+	Application->ProcessMessages();
+	if(ProgressBar1->Position==100)
+		ProgressBar1->Position=0;
+	ProgressBar1->Position+=5;
+}
+//---------------------------------------------------------------------------
+void TFAtualizacao::WcharToChar(wchar_t *pw,char *pc)
+{
+   char *c; wchar_t *w;
+   c=pc;w=pw;
+	while(*w)
+		*c++=*w++;
+	*c=0;
+}
+

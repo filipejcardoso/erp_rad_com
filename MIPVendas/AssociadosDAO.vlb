@@ -1,0 +1,13 @@
+﻿[RESTRequest]
+Coordinates=126,10,96,124
+
+[RESTResponse]
+Coordinates=10,10,106,344
+
+[RESTClient]
+Coordinates=232,10,82,80
+
+[]
+Coordinates=226,276,205,36
+Visible=True
+
